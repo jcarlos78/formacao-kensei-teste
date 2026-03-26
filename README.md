@@ -1,86 +1,138 @@
-# Projeto Kensei T2 - Cyber, IA, Dados e Automação
+```
+ ██╗  ██╗███████╗███╗   ██╗███████╗███████╗██╗    ████████╗██████╗
+ ██║ ██╔╝██╔════╝████╗  ██║██╔════╝██╔════╝██║    ╚══██╔══╝╚════██╗
+ █████╔╝ █████╗  ██╔██╗ ██║███████╗█████╗  ██║       ██║    █████╔╝
+ ██╔═██╗ ██╔══╝  ██║╚██╗██║╚════██║██╔══╝  ██║       ██║   ██╔═══╝
+ ██║  ██╗███████╗██║ ╚████║███████║███████╗██║       ██║   ███████╗
+ ╚═╝  ╚═╝╚══════╝╚═╝  ╚═══╝╚══════╝╚══════╝╚═╝       ╚═╝   ╚══════╝
+```
 
-Bem-vindo ao laboratório de operações cibernéticas do futuro.
-No codinome: jcarlos78/formacao-kensei-teste.
-
----
-
-## Sobre este projeto
-
-Este repositório é o sandbox de um dev com mindset hacker, voltado para:
-- Ciberseguranca (pensamento adversarial, analise de risco, hardening)
-- Inteligencia Artificial (modelagem, pipelines, ML Ops)
-- Dados (extracao, transformacao, visualizacao, cientificos)
-- Automacao (ci/cd, scripts, rotinas, orquestracao)
-
-E a base minima funcionando para demonstrar como integrar os 4 pilares em lab de 24/7.
-
----
-
-## Estrutura inicial
-
-- README.md: esta pagina, com mindset pro-learning e pro-impact.
-- src/ (ainda nao criado): onde ficarao os modulos de ETL, modelagem e automacao.
-- tests/ (ainda nao criado): testes de integracao / seguranca / regressao.
-
-Metodo: commit rapido, teste rapido, deploy rapido (Fast Feedback Loop).
+<p align="center">
+  <b>[ CYBER // IA // DADOS // AUTOMACAO ]</b><br>
+  <code>codinome: jcarlos78/formacao-kensei-teste</code><br>
+  <img src="https://img.shields.io/badge/status-ONLINE-brightgreen?style=flat-square&logo=statuspal" alt="status"/>
+  <img src="https://img.shields.io/badge/threat_level-HIGH-red?style=flat-square&logo=hackthebox" alt="threat"/>
+  <img src="https://img.shields.io/badge/mode-HACKER-black?style=flat-square&logo=kalilinux" alt="mode"/>
+</p>
 
 ---
 
-## Setup (modo hacker)
+### `> whoami`
+
+> Laboratorio de operacoes ciberneticas do futuro.
+> Sandbox de um dev com mindset hacker — ofensivo, defensivo, automatizado.
+
+```
+[*] Inicializando modulos...
+[+] Ciberseguranca ........... LOADED  (pensamento adversarial, analise de risco, hardening)
+[+] Inteligencia Artificial .. LOADED  (modelagem, pipelines, ML Ops)
+[+] Dados .................... LOADED  (extracao, transformacao, visualizacao, cientificos)
+[+] Automacao ................ LOADED  (ci/cd, scripts, rotinas, orquestracao)
+[*] Todos os modulos operacionais. Aguardando instrucoes...
+```
+
+---
+
+### `> tree --structure`
+
+```
+formacao-kensei-teste/
+├── README.md          # < voce esta aqui
+├── src/               # modulos de ETL, modelagem e automacao  [PENDENTE]
+└── tests/             # testes integracao / seguranca / regressao  [PENDENTE]
+```
+
+> **Metodo:** commit rapido, teste rapido, deploy rapido — `Fast Feedback Loop`
+
+---
+
+### `> ./setup.sh`
 
 ```bash
-# clonando repo
+# [PASSO 1] Clonar o repositorio
 git clone https://github.com/jcarlos78/formacao-kensei-teste.git
 cd formacao-kensei-teste
 
-# configurando ambiente
+# [PASSO 2] Preparar ambiente isolado
 python3 -m venv .venv
 source .venv/bin/activate
+
+# [PASSO 3] Dependencias
 pip install -r requirements.txt   # se houver
 ```
 
 ---
 
-## Saida de artefatos
+### `> ./deploy.sh`
 
 ```bash
-# commit e push em alta velocidade
+# push em alta velocidade
 git add .
 git commit -m "feat: first viability check of cyber-ia-dados-automacao"
 git push origin main
 ```
 
----
-
-## Boas praticas de cyber para IA + dados + automacao
-
-- Polarize e valide entradas; trate como hostil.
-- Mantenha os secrets fora do codigo; use variaveis de ambiente/manifests.
-- Teste adversarial: fuzzing no pipeline e modulos de IA.
-- Automacao com retorno e rollback seguro (feature flags, canary deploy).
+```
+[*] Commit enviado.
+[*] Pipeline acionado.
+[+] Deploy concluido com sucesso.
+```
 
 ---
 
-## Credenciais de titulacao do curso
+### `> cat /etc/security/best_practices.conf`
 
-formacao-kensei-teste - professor: jcarlos78 - mentor: Jose-Menezes_bec.
+```
+# ========================================
+#  BOAS PRATICAS :: CYBER + IA + DADOS
+# ========================================
+
+01. Polarize e valide entradas           -> trate TUDO como hostil
+02. Secrets fora do codigo               -> use env vars / manifests
+03. Teste adversarial                    -> fuzzing no pipeline e modulos de IA
+04. Automacao com rollback seguro        -> feature flags, canary deploy
+05. Logs em tudo, sempre                 -> se nao ta logado, nao aconteceu
+```
 
 ---
 
-## Proximos passos (roadmap hacker)
+### `> cat /var/log/roadmap.log`
 
-1. pipeline ETL seguro + pipeline DVC/gitslack
-2. modelo ML de deteccao de anomalias (com logs, alertas e score drift)
-3. auto-remediacao com playbooks em Python + GitHub Actions
-4. auditoria automatizada + testes pentest basicos
+```
+[2026-03-26 00:00:01] PHASE 1 >> Pipeline ETL seguro + pipeline DVC/gitslack
+[2026-03-26 00:00:02] PHASE 2 >> Modelo ML de deteccao de anomalias (logs, alertas, score drift)
+[2026-03-26 00:00:03] PHASE 3 >> Auto-remediacao com playbooks Python + GitHub Actions
+[2026-03-26 00:00:04] PHASE 4 >> Auditoria automatizada + testes pentest basicos
+```
+
+```
+██████████████████████░░░░░░░░░░░░  PROGRESSO: 25%
+```
 
 ---
 
-## Contato
+### `> gpg --verify credenciais.sig`
 
-- GitHub: https://github.com/jcarlos78
-- Email: jcarlos78@projeto.example (substituir com email real)
+```
+formacao-kensei-teste
+├── professor: jcarlos78
+└── mentor:    Jose-Menezes_bec
+    [SIGNATURE VERIFIED]
+```
 
-Mantenha simples, seguro, rapido e logado.
+---
 
+### `> cat /etc/motd`
+
+```
+╔══════════════════════════════════════════════════╗
+║  "Mantenha simples, seguro, rapido e logado."   ║
+╚══════════════════════════════════════════════════╝
+```
+
+<p align="center">
+  <a href="https://github.com/jcarlos78"><img src="https://img.shields.io/badge/GitHub-jcarlos78-181717?style=for-the-badge&logo=github" alt="github"/></a>
+  <a href="mailto:jcarlos78@projeto.example"><img src="https://img.shields.io/badge/Email-contato-red?style=for-the-badge&logo=protonmail" alt="email"/></a>
+</p>
+
+<p align="center"><code>$ exit</code></p>
