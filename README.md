@@ -1,138 +1,126 @@
-```
- ██╗  ██╗███████╗███╗   ██╗███████╗███████╗██╗    ████████╗██████╗
- ██║ ██╔╝██╔════╝████╗  ██║██╔════╝██╔════╝██║    ╚══██╔══╝╚════██╗
- █████╔╝ █████╗  ██╔██╗ ██║███████╗█████╗  ██║       ██║    █████╔╝
- ██╔═██╗ ██╔══╝  ██║╚██╗██║╚════██║██╔══╝  ██║       ██║   ██╔═══╝
- ██║  ██╗███████╗██║ ╚████║███████║███████╗██║       ██║   ███████╗
- ╚═╝  ╚═╝╚══════╝╚═╝  ╚═══╝╚══════╝╚══════╝╚═╝       ╚═╝   ╚══════╝
-```
+# Scripts Python - Projetos Educacionais
 
-<p align="center">
-  <b>[ CYBER // IA // DADOS // AUTOMACAO ]</b><br>
-  <code>codinome: jcarlos78/formacao-kensei-teste</code><br>
-  <img src="https://img.shields.io/badge/status-ONLINE-brightgreen?style=flat-square&logo=statuspal" alt="status"/>
-  <img src="https://img.shields.io/badge/threat_level-HIGH-red?style=flat-square&logo=hackthebox" alt="threat"/>
-  <img src="https://img.shields.io/badge/mode-HACKER-black?style=flat-square&logo=kalilinux" alt="mode"/>
-</p>
+Coleção de scripts Python com funcionalidades variadas para fins educacionais.
 
 ---
 
-### `> whoami`
+## 📄 Arquivos do Projeto
 
-> Laboratorio de operacoes ciberneticas do futuro.
-> Sandbox de um dev com mindset hacker — ofensivo, defensivo, automatizado.
-
-```
-[*] Inicializando modulos...
-[+] Ciberseguranca ........... LOADED  (pensamento adversarial, analise de risco, hardening)
-[+] Inteligencia Artificial .. LOADED  (modelagem, pipelines, ML Ops)
-[+] Dados .................... LOADED  (extracao, transformacao, visualizacao, cientificos)
-[+] Automacao ................ LOADED  (ci/cd, scripts, rotinas, orquestracao)
-[*] Todos os modulos operacionais. Aguardando instrucoes...
-```
-
----
-
-### `> tree --structure`
-
-```
-formacao-kensei-teste/
-├── README.md          # < voce esta aqui
-├── src/               # modulos de ETL, modelagem e automacao  [PENDENTE]
-└── tests/             # testes integracao / seguranca / regressao  [PENDENTE]
-```
-
-> **Metodo:** commit rapido, teste rapido, deploy rapido — `Fast Feedback Loop`
-
----
-
-### `> ./setup.sh`
+### 1. **ola.py**
+Script simples que pede o nome do usuário e exibe uma saudação com o nome em **maiúscula**.
 
 ```bash
-# [PASSO 1] Clonar o repositorio
-git clone https://github.com/jcarlos78/formacao-kensei-teste.git
-cd formacao-kensei-teste
-
-# [PASSO 2] Preparar ambiente isolado
-python3 -m venv .venv
-source .venv/bin/activate
-
-# [PASSO 3] Dependencias
-pip install -r requirements.txt   # se houver
+python ola.py
 ```
+
+**O que faz:**
+- Solicita o nome via `input()`
+- Converte para maiúscula com `.upper()`
+- Exibe mensagem de saudação formatada
 
 ---
 
-### `> ./deploy.sh`
+### 2. **celsius_fahrenheit.py**
+Conversor de temperatura de **Celsius para Fahrenheit** com formatação de saída.
 
 ```bash
-# push em alta velocidade
-git add .
-git commit -m "feat: first viability check of cyber-ia-dados-automacao"
-git push origin main
+python celsius_fahrenheit.py
 ```
 
+**O que faz:**
+- Pede a temperatura em Celsius
+- Aplica a fórmula: `(C × 9/5) + 32`
+- Exibe resultado com 1 casa decimal
+
+---
+
+### 3. **lista_compras.py**
+Gerenciador de lista de compras com menu interativo de 4 opções.
+
+```bash
+python lista_compras.py
 ```
-[*] Commit enviado.
-[*] Pipeline acionado.
-[+] Deploy concluido com sucesso.
+
+**Funcionalidades:**
+- ✅ **Adicionar item** — Insere novo item na lista
+- 👁️ **Ver lista** — Exibe todos os itens numerados
+- ❌ **Remover item** — Remove por número
+- 🚪 **Sair** — Encerra o programa
+
+**Estrutura:** Loop `while True` com menu e tratamento de erros.
+
+---
+
+### 4. **quiz_cyber.py**
+Quiz de **5 perguntas sobre Cibersegurança** com múltipla escolha (3 opções).
+
+```bash
+python quiz_cyber.py
+```
+
+**Perguntas cobertas:**
+1. Phishing
+2. VPN
+3. HTTPS/TLS/SSL
+4. Ataque DDoS
+5. Boas práticas de senhas
+
+**Resultado:**
+- Mostra cada resposta (correta/incorreta)
+- Placar final
+- **Aprovado** se ≥ 3 acertos | **Reprovado** se < 3
+
+---
+
+### 5. **gerador_senhas.py**
+Gerador de senhas aleatórias com opções customizáveis usando `random` e `string`.
+
+```bash
+python gerador_senhas.py
+```
+
+**Opções de configuração:**
+- 📏 Tamanho da senha
+- 🔤 Maiúsculas (A-Z)
+- 🔢 Números (0-9)
+- 🔣 Símbolos (!@#$%^&*)
+
+**Como funciona:**
+- Combina caracteres conforme seleção
+- Usa `random.choice()` para gerar a senha
+- Exibe resultado criptograficamente aleatório
+
+---
+
+## 🛠️ Requisitos
+
+- **Python 3.6+**
+- Nenhuma dependência externa (usa apenas bibliotecas padrão)
+
+---
+
+## 🚀 Como usar
+
+Cada script é independente. Execute diretamente:
+
+```bash
+python nome_do_arquivo.py
 ```
 
 ---
 
-### `> cat /etc/security/best_practices.conf`
+## 📚 Conceitos Praticados
 
-```
-# ========================================
-#  BOAS PRATICAS :: CYBER + IA + DADOS
-# ========================================
-
-01. Polarize e valide entradas           -> trate TUDO como hostil
-02. Secrets fora do codigo               -> use env vars / manifests
-03. Teste adversarial                    -> fuzzing no pipeline e modulos de IA
-04. Automacao com rollback seguro        -> feature flags, canary deploy
-05. Logs em tudo, sempre                 -> se nao ta logado, nao aconteceu
-```
+- ✅ Entrada/saída (`input()`, `print()`)
+- ✅ Estruturas de controle (`if/elif/else`, `while`)
+- ✅ Listas e iteração (`for`, `.append()`, `.pop()`)
+- ✅ Formatação de strings (f-strings)
+- ✅ Módulos padrão (`random`, `string`)
+- ✅ Tratamento de erros (`try/except`)
+- ✅ Funções e lógica programação
 
 ---
 
-### `> cat /var/log/roadmap.log`
+## 📝 Autor
 
-```
-[2026-03-26 00:00:01] PHASE 1 >> Pipeline ETL seguro + pipeline DVC/gitslack
-[2026-03-26 00:00:02] PHASE 2 >> Modelo ML de deteccao de anomalias (logs, alertas, score drift)
-[2026-03-26 00:00:03] PHASE 3 >> Auto-remediacao com playbooks Python + GitHub Actions
-[2026-03-26 00:00:04] PHASE 4 >> Auditoria automatizada + testes pentest basicos
-```
-
-```
-██████████████████████░░░░░░░░░░░░  PROGRESSO: 25%
-```
-
----
-
-### `> gpg --verify credenciais.sig`
-
-```
-formacao-kensei-teste
-├── professor: jcarlos78
-└── mentor:    Jose-Menezes_bec
-    [SIGNATURE VERIFIED]
-```
-
----
-
-### `> cat /etc/motd`
-
-```
-╔══════════════════════════════════════════════════╗
-║  "Mantenha simples, seguro, rapido e logado."   ║
-╚══════════════════════════════════════════════════╝
-```
-
-<p align="center">
-  <a href="https://github.com/jcarlos78"><img src="https://img.shields.io/badge/GitHub-jcarlos78-181717?style=for-the-badge&logo=github" alt="github"/></a>
-  <a href="mailto:jcarlos78@projeto.example"><img src="https://img.shields.io/badge/Email-contato-red?style=for-the-badge&logo=protonmail" alt="email"/></a>
-</p>
-
-<p align="center"><code>$ exit</code></p>
+José Menezes
